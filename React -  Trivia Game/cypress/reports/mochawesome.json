@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-06-20T10:34:29.162Z",
+    "end": "2021-06-20T10:34:29.753Z",
+    "duration": 591,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b15a0fac-d8e9-4917-8e34-b39d0426d1ac",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0d7d014-b777-4169-ac85-ef7bd7dbae76",
+          "title": "18 - [TELA DE RANKING] Crie um botão para ir ao início",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Volta para a tela inicial",
+              "fullTitle": "18 - [TELA DE RANKING] Crie um botão para ir ao início Volta para a tela inicial",
+              "timedOut": null,
+              "duration": 560,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.clearLocalStorage();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).type(name1);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email1);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(BUTTON_RANKING_SELECTOR).click();\ncy.get(BUTTON_GO_HOME_SELECTOR).click();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).should('exist');\nconst storage = Object.keys(localStorage).length;\nexpect(storage).to.be.lessThan(4);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:37501/__cypress/runner/cypress_runner.js:138905:23\n    at visitFailedByErr (http://localhost:37501/__cypress/runner/cypress_runner.js:138264:12)\n    at http://localhost:37501/__cypress/runner/cypress_runner.js:138904:11\n    at tryCatcher (http://localhost:37501/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://localhost:37501/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://localhost:37501/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://localhost:37501/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://localhost:37501/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://localhost:37501/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://localhost:37501/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:37501/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://localhost:37501/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:37501/__cypress/tests?p=cypress/integration/project.spec.js:714:5)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "65ba8842-984a-4d7b-8bf2-7868162ea854",
+              "parentUUID": "d0d7d014-b777-4169-ac85-ef7bd7dbae76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65ba8842-984a-4d7b-8bf2-7868162ea854"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 560,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
